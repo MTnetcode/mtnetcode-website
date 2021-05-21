@@ -169,10 +169,11 @@ transform: translate(-50%); */
   justify-content: space-around;
 }
 .flex-container2 > div {
-  flex-basis: 40%;
+  flex-basis: 45%;
 }
 .avatar {
   height: 20rem;
+  border-radius: 0.5rem;
 }
 .container-about {
   display: flex;
@@ -257,16 +258,14 @@ button {
   cursor: pointer;
 
   background: linear-gradient(to left, #3b3838 50%, white 50%) right;
-    background-size: 200%;
-    transition: .5s ease-out;
+  background-size: 200%;
+  transition: 0.5s ease-out;
 }
 
-
-button:hover{
-    
-    border: solid white 0.4rem;
-    color: black;
-    background-position: left;
+button:hover {
+  border: solid white 0.4rem;
+  color: black;
+  background-position: left;
 }
 
 footer {
