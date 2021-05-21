@@ -191,6 +191,12 @@ transform: translate(-50%); */
   justify-content: center;
   padding: 2rem 4rem;
   margin: 1rem 0;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.container-about:hover {
+  transform: scale(1.2);
 }
 
 .container-about > div {
