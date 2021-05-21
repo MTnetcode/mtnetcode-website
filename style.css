@@ -334,7 +334,7 @@ footer {
     display: none;
   }
   h2 {
-    padding-left: 1rem;
+    text-align: center;
   }
   .mobile-menu-icon {
     display: inline-block;
