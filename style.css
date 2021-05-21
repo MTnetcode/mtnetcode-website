@@ -255,6 +255,18 @@ button {
   font-size: 2rem;
   color: white;
   cursor: pointer;
+
+  background: linear-gradient(to left, #3b3838 50%, white 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+
+
+button:hover{
+    
+    border: solid white 0.4rem;
+    color: black;
+    background-position: left;
 }
 
 footer {
