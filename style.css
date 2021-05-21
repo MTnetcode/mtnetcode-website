@@ -127,7 +127,7 @@ transform: translate(-50%); */
 }
 
 .flex-container > div {
-  flex-basis: 30%;
+  flex-basis: 26%;
 }
 .container {
   text-align: center;
@@ -153,10 +153,18 @@ transform: translate(-50%); */
   font-size: 3rem;
   font-weight: 500;
   margin-bottom: 2rem;
+  text-align: center;
 }
 .p {
   font-size: 1.5rem;
   text-align: justify;
+}
+
+.mobile-links-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .about {
@@ -318,17 +326,28 @@ footer {
   right: 0;
   margin: 1rem;
 }
-
+.about-text {
+  text-align: justify;
+}
+.h3 {
+  display: block;
+}
 @media only screen and (max-width: 768px) {
   .main-container {
     margin: 0;
   }
   .about-text {
     flex-basis: 100%;
+    text-align: justify;
   }
   .flex-container2 > div {
     flex-basis: 100%;
   }
+
+  .about-img {
+    text-align: center;
+  }
+
   button {
     width: 100%;
   }
@@ -339,7 +358,6 @@ footer {
 
   .container-about > div {
     flex: 0 0 100%;
-    text-align: justify;
   }
   .link-div {
     display: none;

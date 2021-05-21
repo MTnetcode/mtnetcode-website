@@ -41,7 +41,7 @@ export default function animation() {
     entries.map((entry) => {
       if (entry.isIntersecting) {
         document.querySelectorAll(".container").forEach((element) => {
-          element.classList.add("slide-text");
+          element.classList.add("bounce-text");
         });
       }
     });
@@ -57,9 +57,9 @@ export default function animation() {
   const handleIntersectionIcon = (entries) => {
     entries.map((entry) => {
       if (entry.isIntersecting) {
-        openIcon.style.color = 'white'
+        openIcon.style.color = "white";
       } else {
-        openIcon.style.color = 'black'
+        openIcon.style.color = "black";
       }
     });
   };
