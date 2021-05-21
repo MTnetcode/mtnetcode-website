@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    margin: 1.5rem 0 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    margin: 0 5rem;
+}
+.navbar{
+    height: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+
+.contact {
+    margin: 0
+}
+
+.logo{
+    height: 3rem;
+}
+.link-div{
+    position: absolute;
+    right: 5rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.link{
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.header{
+    background-image: url("header.svg");
+    height: 95vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+   
+}
+
+ul {
+    list-style: none;
+}
+li {
+    text-align: center;
+    margin: .8rem 0;
+    padding: 0.5rem 0;
+    transition-property: transform;
+    transition-duration: .4s;
+    
+}
+
+li:hover {
+    transform: scale(1.3);
+}
+
+.social-links {
+    position: fixed;
+    left: 1rem;;
+    top: 50%;
+}
+.social-white{
+    color: white;;
+}
+
+.heading-wrapper {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.header-large{
+font-weight: 800;
+font-size: 7rem;
+color: white;
+animation-name: bouncetext;
+animation-duration: 2s;
+
+}
+
+@keyframes bouncetext {
+      0% {
+        transform: scale(0.1)
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+  
+
+
+.header-small{
+font-weight: 200;
+font-size: 3.1rem;
+color: white;
+text-align: left;
+position: absolute;
+display: inline-block;
+/* position: absolute;
+top: 54%;
+left: 42%;
+transform: translate(-50%); */
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.flex-container>div{
+    flex-basis: 30%;
+}
+.container{
+    text-align: center;
+    padding: 0 5rem;
+    margin-bottom: 2rem;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+.container:hover {
+    transform: scale(1.2)
+}
+
+.icon{
+    margin-bottom: 2rem;
+}
+
+
+.h2{
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 3rem 0;
+   
+}
+.h3{
+font-size: 3rem;
+font-weight: 500;
+margin-bottom: 2rem;
+
+
+}
+.p{
+font-size: 1.5rem;
+text-align: justify;
+}
+
+.about{
+    display: inline;
+
+}
+.flex-container2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around
+}
+.flex-container2>div{
+    flex-basis: 40%;
+}
+.avatar{
+    height: 20rem;
+}
+.container-about{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fdfaf6;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 4rem;
+    margin: 1rem 0;
+}
+
+.container-about > div {
+    flex: 0 0 50%;
+}
+
+.bounce-text {
+    animation: bouncetext 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.slide-text {
+    animation: slidetext 1s;
+    animation-fill-mode: backwards;
+}
+@keyframes slidetext {
+    0% {
+        transform: translateY(50%)
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.contact{
+background-color:#3B3838;
+text-align: center;
+
+}
+
+.h2-white{
+    color: white;
+    text-align: center;
+   padding-top: 4rem;
+}
+
+
+input{
+    border: solid #707070 0.1rem;
+    background-color: #3B3838;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    width: 100%;
+    font-family: "Manrope", sans-serif;
+    font-size: 2rem;
+    
+}
+input::placeholder{
+    color: white;
+    font-weight: 300;
+}
+
+textarea{
+    border: solid #707070 0.1rem;
+    background-color: #3B3838;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    width: 100%;
+    font-size: 2rem;
+    font-family: "Manrope", sans-serif;
+    font-size: 2rem;
+    height: 15rem;
+}
+textarea::placeholder{
+    color: white;
+    font-weight: 300;
+
+}
+button{
+    border: solid white 0.4rem;
+    background-color: #3B3838;
+    padding: 1rem;
+    margin: 1.5rem  0;
+    width: 30rem;
+    font-family: "Manrope", sans-serif;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    
+}
+
+footer{
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #3B3838;
+    font-weight: 500;
+}
+
+.contact-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.contact-form {
+    flex-basis: 38%;
+    text-align: left;
+}
+
+
+
+

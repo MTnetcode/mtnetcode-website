@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="258" height="292" viewBox="0 0 258 292">
+  <defs>
+    <clipPath id="clip-Icon-web">
+      <rect width="258" height="292"/>
+    </clipPath>
+  </defs>
+  <g id="Icon-web" clip-path="url(#clip-Icon-web)">
+    <g id="Path_4" data-name="Path 4" transform="translate(107.676 203.89)">
+      <path d="M 63.84067535400391 71.40966033935547 L 46.74396133422852 71.40966033935547 L 0.5163169503211975 71.40966033935547 L -18.27273750305176 71.40966033935547 L 0.8990820646286011 0.4999968409538269 L 46.352294921875 0.4999968409538269 L 63.84067535400391 71.40966033935547 Z" stroke="none"/>
+      <path d="M 1.281856536865234 1 L -17.61959075927734 70.90966033935547 L 0.5163154602050781 70.90966033935547 L 46.74396133422852 70.90966033935547 L 63.20237731933594 70.90966033935547 L 45.96062088012695 1 L 1.281856536865234 1 M 0.5163154602050781 0 L 46.74396133422852 0 L 64.47897338867188 71.90966033935547 L 46.74396133422852 71.90966033935547 L 0.5163154602050781 71.90966033935547 L -18.92587280273438 71.90966033935547 L 0.5163154602050781 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Rectangle_12" data-name="Rectangle 12" transform="translate(33 276)" stroke="#707070" stroke-width="1">
+      <rect width="195" height="16" stroke="none"/>
+      <rect x="0.5" y="0.5" width="194" height="15" fill="none"/>
+    </g>
+    <g id="Rectangle_13" data-name="Rectangle 13" transform="translate(0 52)" stroke="#707070" stroke-width="1">
+      <rect width="256" height="157" stroke="none"/>
+      <rect x="0.5" y="0.5" width="255" height="156" fill="none"/>
+    </g>
+    <g id="Rectangle_14" data-name="Rectangle 14" transform="translate(22 74)" fill="#b7b7b7" stroke="#b4a3a3" stroke-width="1">
+      <rect width="210" height="114" stroke="none"/>
+      <rect x="0.5" y="0.5" width="209" height="113" fill="none"/>
+    </g>
+    <g id="Path_5" data-name="Path 5" transform="translate(51 19)" fill="#fff">
+      <path d="M154,169h0Z" stroke="none"/>
+      <path d="M 0 169 L 154 169 L 0 169 Z" stroke="none" fill="#707070"/>
+    </g>
+    <text id="Lorem_Ipsum" data-name="Lorem Ipsum" transform="translate(65.5 69)" fill="#030303" font-size="5" font-family="Manrope-Bold, Manrope" font-weight="700"><tspan x="0" y="0">Lorem Ipsum</tspan></text>
+    <g id="Rectangle_15" data-name="Rectangle 15" transform="translate(51.5 -1)" fill="#eaeaea" stroke="#707070" stroke-width="1">
+      <rect width="151" height="189" stroke="none"/>
+      <rect x="0.5" y="0.5" width="150" height="188" fill="none"/>
+    </g>
+    <g id="Rectangle_16" data-name="Rectangle 16" transform="translate(61.5 14)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="131" height="9" stroke="none"/>
+      <rect x="0.5" y="0.5" width="130" height="8" fill="none"/>
+    </g>
+    <g id="Rectangle_17" data-name="Rectangle 17" transform="translate(62.5 63)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="38" height="31" stroke="none"/>
+      <rect x="0.5" y="0.5" width="37" height="30" fill="none"/>
+    </g>
+    <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(62.5 114)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="125" height="50" stroke="none"/>
+      <rect x="0.5" y="0.5" width="124" height="49" fill="none"/>
+    </g>
+    <g id="Rectangle_19" data-name="Rectangle 19" transform="translate(108.5 63)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="37" height="31" stroke="none"/>
+      <rect x="0.5" y="0.5" width="36" height="30" fill="none"/>
+    </g>
+    <g id="Rectangle_20" data-name="Rectangle 20" transform="translate(154.5 63)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="33" height="31" stroke="none"/>
+      <rect x="0.5" y="0.5" width="32" height="30" fill="none"/>
+    </g>
+    <g id="Rectangle_21" data-name="Rectangle 21" transform="translate(61.5 23)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="131" height="24" stroke="none"/>
+      <rect x="0.5" y="0.5" width="130" height="23" fill="none"/>
+    </g>
+    <text id="Lorem_Ipsum-2" data-name="Lorem Ipsum" transform="translate(99.5 38)" fill="#030303" font-size="7" font-family="Manrope-Bold, Manrope" font-weight="700"><tspan x="0" y="0">Lorem Ipsum</tspan></text>
+    <text id="Lorem_Ipsum-3" data-name="Lorem Ipsum" transform="translate(61.5 61)" fill="#030303" font-size="5" font-family="Manrope-Bold, Manrope" font-weight="700"><tspan x="0" y="0">Lorem Ipsum</tspan></text>
+    <text id="Lorem_Ipsum-4" data-name="Lorem Ipsum" transform="translate(62.5 105)" fill="#030303" font-size="5" font-family="Manrope-Bold, Manrope" font-weight="700"><tspan x="0" y="0">Lorem Ipsum</tspan></text>
+    <g id="Rectangle_22" data-name="Rectangle 22" transform="translate(61.5 174)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="131" height="9" stroke="none"/>
+      <rect x="0.5" y="0.5" width="130" height="8" fill="none"/>
+    </g>
+    <line id="Line_5" data-name="Line 5" y2="9.312" transform="translate(158.723 15.216)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_6" data-name="Line 6" y2="9.312" transform="translate(166.336 15.216)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_7" data-name="Line 7" y2="9.312" transform="translate(173.95 15.216)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_8" data-name="Line 8" y2="9.312" transform="translate(181.563 15.216)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Path_6" data-name="Path 6" transform="translate(61.651 3.835)" fill="#f50303">
+      <path d="M 3.806722640991211 5.707799911499023 C 1.983392596244812 5.707799911499023 0.5000026226043701 4.539700031280518 0.5000026226043701 3.103899955749512 C 0.5000026226043701 1.668099999427795 1.983392596244812 0.4999999701976776 3.806722640991211 0.4999999701976776 C 5.63005256652832 0.4999999701976776 7.113442420959473 1.668099999427795 7.113442420959473 3.103899955749512 C 7.113442420959473 4.539700031280518 5.63005256652832 5.707799911499023 3.806722640991211 5.707799911499023 Z" stroke="none"/>
+      <path d="M 3.806722640991211 1 C 3.019492626190186 1 2.287962436676025 1.242959976196289 1.746902465820312 1.684130191802979 C 1.265252590179443 2.076849937438965 1.000002861022949 2.581069946289062 1.000002861022949 3.103899955749512 C 1.000002861022949 3.626729965209961 1.265252590179443 4.130949974060059 1.746902465820312 4.523670196533203 C 2.287962436676025 4.964839935302734 3.019492626190186 5.207799911499023 3.806722640991211 5.207799911499023 C 4.593952655792236 5.207799911499023 5.325482368469238 4.964839935302734 5.866542816162109 4.523670196533203 C 6.348192691802979 4.130949974060059 6.613442420959473 3.626729965209961 6.613442420959473 3.103899955749512 C 6.613442420959473 2.581069946289062 6.348192691802979 2.076849937438965 5.866542816162109 1.684130191802979 C 5.325482368469238 1.242959976196289 4.593952655792236 1 3.806722640991211 1 M 3.806722640991211 0 C 5.909112930297852 0 7.613442420959473 1.389659881591797 7.613442420959473 3.103899955749512 C 7.613442420959473 4.818140029907227 5.909112930297852 6.207799911499023 3.806722640991211 6.207799911499023 C 1.704332828521729 6.207799911499023 2.86102294921875e-06 4.818140029907227 2.86102294921875e-06 3.103899955749512 C 2.86102294921875e-06 1.389659881591797 1.704332828521729 0 3.806722640991211 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Path_7" data-name="Path 7" transform="translate(69.265 3.835)" fill="#fff612">
+      <path d="M 3.806722640991211 5.707799911499023 C 1.983392596244812 5.707799911499023 0.5000026226043701 4.539700031280518 0.5000026226043701 3.103899955749512 C 0.5000026226043701 1.668099999427795 1.983392596244812 0.4999999701976776 3.806722640991211 0.4999999701976776 C 5.63005256652832 0.4999999701976776 7.113442420959473 1.668099999427795 7.113442420959473 3.103899955749512 C 7.113442420959473 4.539700031280518 5.63005256652832 5.707799911499023 3.806722640991211 5.707799911499023 Z" stroke="none"/>
+      <path d="M 3.806722640991211 1 C 3.019492626190186 1 2.287962436676025 1.242959976196289 1.746902465820312 1.684130191802979 C 1.265252590179443 2.076849937438965 1.000002861022949 2.581069946289062 1.000002861022949 3.103899955749512 C 1.000002861022949 3.626729965209961 1.265252590179443 4.130949974060059 1.746902465820312 4.523670196533203 C 2.287962436676025 4.964839935302734 3.019492626190186 5.207799911499023 3.806722640991211 5.207799911499023 C 4.593952655792236 5.207799911499023 5.325482368469238 4.964839935302734 5.866542816162109 4.523670196533203 C 6.348192691802979 4.130949974060059 6.613442420959473 3.626729965209961 6.613442420959473 3.103899955749512 C 6.613442420959473 2.581069946289062 6.348192691802979 2.076849937438965 5.866542816162109 1.684130191802979 C 5.325482368469238 1.242959976196289 4.593952655792236 1 3.806722640991211 1 M 3.806722640991211 0 C 5.909112930297852 0 7.613442420959473 1.389659881591797 7.613442420959473 3.103899955749512 C 7.613442420959473 4.818140029907227 5.909112930297852 6.207799911499023 3.806722640991211 6.207799911499023 C 1.704332828521729 6.207799911499023 2.86102294921875e-06 4.818140029907227 2.86102294921875e-06 3.103899955749512 C 2.86102294921875e-06 1.389659881591797 1.704332828521729 0 3.806722640991211 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(76.5 4)" fill="#03ff20" stroke="#707070" stroke-width="1">
+      <ellipse cx="4" cy="3" rx="4" ry="3" stroke="none"/>
+      <ellipse cx="4" cy="3" rx="3.5" ry="2.5" fill="none"/>
+    </g>
+  </g>
+</svg>
