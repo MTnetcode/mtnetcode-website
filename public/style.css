@@ -338,6 +338,42 @@ footer {
 .h3 {
   display: block;
 }
+
+.popup-window-fail {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40vw;
+  height: 30vh;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.popup-window-fail.show-popup {
+  display: block;
+}
+
+.error-header {
+  font-size: 3rem;
+  margin: 2rem 0 2rem 0;
+  display: block;
+}
+
+.error-subheader {
+  font-size: 2rem;
+  display: block;
+}
+
+.popup-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 1rem;
+}
+
 @media only screen and (max-width: 768px) {
   .main-container {
     margin: 0;
@@ -393,5 +429,10 @@ footer {
   }
   .header {
     background-image: url("header-mobile.svg");
+  }
+
+  .popup-window-fail {
+    width: 100%;
+    height: 60vh;
   }
 }

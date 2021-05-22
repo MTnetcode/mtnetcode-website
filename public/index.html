@@ -147,19 +147,34 @@
       <h2 class="h2 h2-white">Leave us a message</h2>
       <div class="contact-flex">
         <div class="contact-form">
-          <input type="name" name="name" placeholder="Full Name" /> <br />
-          <input type="email" name="email" placeholder="Email Address" /> <br />
+          <input type="name" name="name" id="name" placeholder="Full Name" />
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+          />
+          <br />
           <textarea
             name="message"
             name="message"
             cols="30"
             rows="10"
             placeholder="Message"
+            id="message"
           ></textarea>
           <br />
-          <button>Send message</button>
+          <button id="btn">Send message</button>
         </div>
       </div>
+    </div>
+
+    <div class="popup-window-fail">
+      <i class="fas fa-times fa-2x popup-close"></i>
+      <span class="error-header">Your message could not be send</span>
+      <span class="error-subheader">Reasons</span>
+      <div id="errors-show"></div>
     </div>
 
     <footer>© MTnetcode 2021</footer>
