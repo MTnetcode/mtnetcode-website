@@ -11,6 +11,11 @@ app.get("/", (req, res) => {
   res.sendFile(serve_html + "index.html");
 });
 
+app.post("/sendemail", (req, res) => {
+  const { name, email, message } = req.body;
+  res.json({ msg: `Thank you for your message ${name}` });
+});
+
 const PORT = 3333 || process.env.PORT;
 
 app.listen(PORT, () => {
