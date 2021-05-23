@@ -73,7 +73,7 @@ export default async function sendForm() {
     let email = document.getElementById("email").value;
     let message = document.getElementById("message").value;
 
-    let res = await fetch("http://localhost:3333/sendemail", {
+    let res = await fetch(`/sendemail`, {
       method: "post",
       headers: {
         Accept: "application/json, text/plain, */*",
@@ -86,6 +86,7 @@ export default async function sendForm() {
       }),
     });
     let data = await res.json();
+    console.log(data);
 
     return data.msg;
   }

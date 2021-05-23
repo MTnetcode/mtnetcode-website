@@ -369,6 +369,7 @@ footer {
   border-radius: 5px;
   text-align: center;
   padding-top: 2rem;
+  margin-bottom: 2rem;
 }
 .btn {
   display: block;
@@ -399,15 +400,21 @@ footer {
 }
 
 .popup-close {
-  margin: 1rem;
-  padding: 0.5rem 5rem;
+  margin: 2.5rem;
+  padding: 1rem 7rem;
   border: 1px solid black;
+  border-radius: 2px;
   display: inline-block;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
 }
 
 .popup-close:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .success-header {
@@ -476,16 +483,12 @@ footer {
 
   .popup-window-fail {
     width: 100%;
-    height: 60vh;
   }
   .popup-window-success {
     width: 100%;
-    height: 30vh;
   }
-  /* .success-header {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  } */
+
+  .header-large {
+    font-size: 6rem;
+  }
 }
