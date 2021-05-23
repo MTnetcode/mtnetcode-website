@@ -58,7 +58,7 @@ a {
 ul {
   list-style: none;
 }
-li {
+.li {
   text-align: center;
   margin: 0.8rem 0;
   padding: 0.5rem 0;
@@ -66,7 +66,16 @@ li {
   transition-duration: 0.4s;
 }
 
-li:hover {
+.fiver{
+  height: 4rem;
+}
+
+a[class="social-white"],a:link[class="social-white"],a:visited[class="social-white"] a:active[class="social-white"] {
+  text-decoration: none;
+
+}
+
+.li:hover {
   transform: scale(1.3);
 }
 
@@ -76,7 +85,7 @@ li:hover {
   top: 50%;
 }
 .social-white {
-  color: white;
+  color: white
 }
 
 .heading-wrapper {
@@ -152,8 +161,7 @@ transform: translate(-50%); */
 .h3 {
   font-size: 3rem;
   font-weight: 500;
-  margin-bottom: 2rem;
-  text-align: center;
+  text-align: left;
 }
 .p {
   font-size: 1.5rem;
@@ -167,14 +175,13 @@ transform: translate(-50%); */
   transform: translate(-50%, -50%);
 }
 
-.about {
-  display: inline;
-}
+
 .flex-container2 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 1rem;
 }
 .flex-container2 > div {
   flex-basis: 45%;
@@ -188,6 +195,7 @@ transform: translate(-50%); */
   flex-wrap: wrap;
   background-color: #fdfaf6;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
   padding: 2rem 4rem;
   margin: 1rem 0;
@@ -195,13 +203,15 @@ transform: translate(-50%); */
   transition-duration: 1s;
 }
 
+.container-about > div {
+  flex-basis: 40%;
+}
+
 .container-about:hover {
   transform: scale(1.2);
 }
 
-.container-about > div {
-  flex: 0 0 50%;
-}
+
 
 .bounce-text {
   animation: bouncetext 1s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -244,6 +254,9 @@ input {
 input::placeholder {
   color: white;
   font-weight: 300;
+}
+.about {
+  margin-left: .5rem;
 }
 
 textarea {
@@ -341,9 +354,7 @@ footer {
 .about-text {
   text-align: justify;
 }
-.h3 {
-  display: block;
-}
+
 
 .popup-window-fail {
   display: none;
