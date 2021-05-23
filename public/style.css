@@ -302,6 +302,10 @@ footer {
   text-align: left;
 }
 
+.fa-check-circle {
+  color: rgb(22, 175, 22);
+}
+
 .mobile-menu-icon {
   display: none;
 }
@@ -348,10 +352,10 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 40vw;
-  height: 30vh;
   text-align: center;
   background-color: white;
   border-radius: 5px;
+  margin-bottom: 2rem;
 }
 
 .popup-window-success {
@@ -382,6 +386,7 @@ footer {
   font-size: 3rem;
   margin: 2rem 0 2rem 0;
   display: block;
+  color: rgb(255, 45, 45);
 }
 
 .error-subheader {
@@ -389,15 +394,24 @@ footer {
   display: block;
 }
 
+.error-text {
+  font-size: 1.5rem;
+}
+
 .popup-close {
-  position: absolute;
-  right: 0;
-  top: 0;
   margin: 1rem;
+  padding: 0.5rem 5rem;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.popup-close:hover {
+  background-color: black;
+  color: white;
 }
 
 .success-header {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 2rem;

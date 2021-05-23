@@ -13,7 +13,9 @@ app.get("/", (req, res) => {
 
 app.post("/sendemail", (req, res) => {
   const { name, email, message } = req.body;
-  res.json({ msg: `Thank you for your message ${name}` });
+  res.json({
+    msg: `Thank you ${name}! <br> Your message has been successfully sent.`,
+  });
 });
 
 const PORT = 3333 || process.env.PORT;

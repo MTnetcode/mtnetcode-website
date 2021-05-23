@@ -20,6 +20,7 @@ export default async function sendForm() {
   });
   function generateErrorDiv(errorMsg) {
     let errorDiv = document.createElement("div");
+    errorDiv.classList.add("error-text");
     errorDiv.innerHTML = errorMsg;
     return errorDiv;
   }
@@ -50,12 +51,21 @@ export default async function sendForm() {
     }
     if (email === "") {
       errors.push("You have to fill in your email");
+    } else {
+      if (!validateEmail(email)) {
+        errors.push("email you have entered is invalid");
+      }
     }
     if (message === "") {
       errors.push("You have to fill in message");
     }
 
     return errors;
+  }
+
+  function validateEmail(email) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
   }
 
   async function sendFormActually() {
@@ -85,6 +95,7 @@ export default async function sendForm() {
     successWindow.classList.add("show-popup");
     closeButtonSuccess.addEventListener("click", () => {
       successWindow.classList.remove("show-popup");
+      location.reload();
     });
   }
 }
