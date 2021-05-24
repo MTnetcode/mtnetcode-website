@@ -8,16 +8,20 @@ export default async function sendForm() {
   let successText = document.querySelector(".success-header");
   let errors = [];
   button.addEventListener("click", async () => {
-    resetErrors();
-    let allErrors = getErrors();
+    resetErrors(); // clear errors
+    let allErrors = getErrors(); //get all errors found in form
     if (allErrors.length > 0) {
+      // if any errros then show them
       showErrors(allErrors);
       errorWindow.classList.add("show-popup");
     } else {
+      // if no error, send form and show success box with message
       let successMsg = await sendFormActually();
       showSuccesWindow(successMsg);
     }
   });
+
+  // generate error div and set class to better output those errors, function takes error message as parameter
   function generateErrorDiv(errorMsg) {
     let errorDiv = document.createElement("div");
     errorDiv.classList.add("error-text");
@@ -35,12 +39,15 @@ export default async function sendForm() {
     errorWindow.classList.remove("show-popup");
   });
 
+  //reset all errors already showed
   function resetErrors() {
     errors = [];
     while (showErrorBox.firstChild) {
       showErrorBox.removeChild(showErrorBox.lastChild);
     }
   }
+
+  // check how many errros in form and return them
   function getErrors() {
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
@@ -63,11 +70,13 @@ export default async function sendForm() {
     return errors;
   }
 
+  //check if email address is in correct format using regexp
   function validateEmail(email) {
     var re = /\S+@\S+\.\S+/;
     return re.test(email);
   }
 
+  // function which actually sends data from form to express backend
   async function sendFormActually() {
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
@@ -91,6 +100,7 @@ export default async function sendForm() {
     return data.msg;
   }
 
+  // if email was send this fucking will show success window
   function showSuccesWindow(msg) {
     successText.innerHTML = msg;
     successWindow.classList.add("show-popup");
