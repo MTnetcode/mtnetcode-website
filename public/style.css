@@ -197,8 +197,6 @@ transform: translate(-50%); */
   background-color: #fdfaf6;
   flex-direction: row;
   justify-content: center;
-  padding: 2rem 4rem;
-  margin: 1rem 0;
   transition-property: transform;
   transition-duration: 1s;
 }
