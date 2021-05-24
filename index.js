@@ -8,10 +8,6 @@ app.use(express.json());
 
 const serve_html = `${__dirname}/public/`;
 
-app.get("/", (req, res) => {
-  res.sendFile(serve_html + "index.html");
-});
-
 app.get("*", function (req, res, next) {
   if (
     "https" !== req.headers["x-forwarded-proto"] &&
@@ -21,6 +17,10 @@ app.get("*", function (req, res, next) {
   } else {
     next();
   }
+});
+
+app.get("/", (req, res) => {
+  res.sendFile(serve_html + "index.html");
 });
 
 app.post("/sendemail", (req, res) => {
