@@ -588,7 +588,13 @@ footer {
   .container-about {
     transition-property: none;
   }
+  .container-about:hover {
+    transform: none;
+  }
   .container {
     transition-property: none;
+  }
+  .container:hover {
+    transform: none;
   }
 }
