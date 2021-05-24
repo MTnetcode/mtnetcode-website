@@ -4,9 +4,10 @@ const enforce = require("express-sslify");
 const app = express();
 const nodemailer = require("nodemailer");
 
+app.use(enforce.HTTPS({ trustProtoHeader: true }));
 app.use(express.static("public"));
 app.use(express.json());
-app.use(enforce.HTTPS({ trustProtoHeader: true }));
+
 const serve_html = `${__dirname}/public/`;
 
 app.get("/", (req, res) => {
