@@ -440,6 +440,10 @@ footer {
   .main-container {
     margin: 0;
   }
+
+  .h3 {
+    text-align: center;
+  }
   .about-text {
     flex-basis: 100%;
     text-align: justify;
@@ -506,12 +510,12 @@ footer {
 
   .social-links-mobile {
     position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .li {
     margin: 1rem;
+    display: block;
   }
 }
