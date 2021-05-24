@@ -1,10 +1,12 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
+const enforce = require("express-sslify");
 const nodemailer = require("nodemailer");
 
 app.use(express.static("public"));
 app.use(express.json());
+app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
 const serve_html = `${__dirname}/public/`;
 
