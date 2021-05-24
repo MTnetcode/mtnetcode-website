@@ -66,13 +66,14 @@ ul {
   transition-duration: 0.4s;
 }
 
-.fiver{
+.fiver {
   height: 4rem;
 }
 
-a[class="social-white"],a:link[class="social-white"],a:visited[class="social-white"] a:active[class="social-white"] {
+a[class="social-white"],
+a:link[class="social-white"],
+a:visited[class="social-white"] a:active[class="social-white"] {
   text-decoration: none;
-
 }
 
 .li:hover {
@@ -85,7 +86,7 @@ a[class="social-white"],a:link[class="social-white"],a:visited[class="social-whi
   top: 50%;
 }
 .social-white {
-  color: white
+  color: white;
 }
 
 .heading-wrapper {
@@ -175,7 +176,6 @@ transform: translate(-50%); */
   transform: translate(-50%, -50%);
 }
 
-
 .flex-container2 {
   display: flex;
   flex-wrap: wrap;
@@ -195,7 +195,6 @@ transform: translate(-50%); */
   flex-wrap: wrap;
   background-color: #fdfaf6;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
   padding: 2rem 4rem;
   margin: 1rem 0;
@@ -204,14 +203,17 @@ transform: translate(-50%); */
 }
 
 .container-about > div {
-  flex-basis: 40%;
+  flex-basis: 45%;
+}
+
+.about-img {
+  align-self: center;
+  margin-bottom: 2rem;
 }
 
 .container-about:hover {
   transform: scale(1.2);
 }
-
-
 
 .bounce-text {
   animation: bouncetext 1s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -256,7 +258,7 @@ input::placeholder {
   font-weight: 300;
 }
 .about {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 textarea {
@@ -354,7 +356,6 @@ footer {
 .about-text {
   text-align: justify;
 }
-
 
 .popup-window-fail {
   display: none;
@@ -501,5 +502,16 @@ footer {
 
   .header-large {
     font-size: 6rem;
+  }
+
+  .social-links-mobile {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .li {
+    margin: 1rem;
   }
 }

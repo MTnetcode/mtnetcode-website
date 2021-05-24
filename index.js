@@ -40,7 +40,7 @@ app.post("/sendemail", (req, res) => {
   });
 });
 
-const PORT = 3334 || process.env.PORT;
+const PORT = process.env.PORT || 3334;
 
 app.listen(PORT, () => {
   console.log(`server running at port ${PORT}`);
