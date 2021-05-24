@@ -1,13 +1,12 @@
 require("dotenv").config();
 const express = require("express");
-const sslRedirect = require("heroku-ssl-redirect");
+const enforce = require("express-sslify");
 const app = express();
 const nodemailer = require("nodemailer");
 
 app.use(express.static("public"));
 app.use(express.json());
-app.use(sslRedirect());
-
+app.use(enforce.HTTPS({ trustProtoHeader: true }));
 const serve_html = `${__dirname}/public/`;
 
 app.get("/", (req, res) => {
