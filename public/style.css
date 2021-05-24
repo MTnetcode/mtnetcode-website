@@ -386,10 +386,25 @@ footer {
 
 .popup-window-fail.show-popup {
   display: block;
+  animation: popup-fadein 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .popup-window-success.show-popup {
   display: block;
+  animation: popup-fadein 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes popup-fadein {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .error-header {
