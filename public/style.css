@@ -440,6 +440,7 @@ footer {
 
   .h3 {
     text-align: center;
+    margin-bottom: 0.5rem;
   }
   .about-text {
     flex-basis: 100%;
@@ -514,5 +515,9 @@ footer {
   .li {
     margin: 1rem;
     display: block;
+  }
+
+  .container-about {
+    padding: 3rem;
   }
 }
