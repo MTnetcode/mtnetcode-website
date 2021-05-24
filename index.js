@@ -13,13 +13,15 @@ app.get("/", (req, res) => {
 });
 
 app.get("*", function (req, res, next) {
-
-  if ("https" !== req.headers["x-forwarded-proto"] && "production" === process.env.NODE_ENV) {
-      res.redirect("https://" + req.hostname + req.url);
+  if (
+    "https" !== req.headers["x-forwarded-proto"] &&
+    "production" === process.env.NODE_ENV
+  ) {
+    res.redirect("https://" + req.hostname + req.url);
   } else {
-      next();
+    next();
   }
-
+});
 
 app.post("/sendemail", (req, res) => {
   const { name, email, message } = req.body;
