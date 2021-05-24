@@ -6,7 +6,7 @@ const nodemailer = require("nodemailer");
 
 app.use(express.static("public"));
 app.use(express.json());
-app.use(sslRedirect);
+app.use(sslRedirect());
 
 const serve_html = `${__dirname}/public/`;
 
