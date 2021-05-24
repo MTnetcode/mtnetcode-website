@@ -584,4 +584,11 @@ footer {
   .container-about {
     padding: 3rem;
   }
+
+  .container-about {
+    transition-property: none;
+  }
+  .container {
+    transition-property: none;
+  }
 }
