@@ -1,18 +1,19 @@
 export default function animation() {
-  let socialLinks = document.querySelector(".social-links");
   let contactForm = document.querySelector(".contact-form");
-  let socialLinkA = document.querySelector('a.social-links');
-  let fiverrIcon = document.querySelector('.fiver');
+  let socialLinks = document.querySelectorAll(".li");
+  let fiverrIcon = document.querySelector(".fiver");
   const handleIntersection = (entries) => {
     entries.map((entry) => {
       if (entry.isIntersecting) {
-        socialLinks.classList.add("social-white");
-        socialLinkA.classList.add('social-white')
-        fiverrIcon.setAttribute('src', '/icons/fiver-white.svg')
+        socialLinks.forEach((link) => {
+          link.classList.add("social-white");
+        });
+        fiverrIcon.setAttribute("src", "/icons/fiver-white.svg");
       } else {
-        socialLinks.classList.remove("social-white");
-        socialLinkA.classList.remove('social-white')
-        fiverrIcon.setAttribute('src', '/icons/fiver.svg')
+        socialLinks.forEach((link) => {
+          link.classList.remove("social-white");
+        });
+        fiverrIcon.setAttribute("src", "/icons/fiver.svg");
       }
     });
   };

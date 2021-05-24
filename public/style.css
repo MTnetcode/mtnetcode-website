@@ -37,7 +37,10 @@ body {
   right: 5rem;
 }
 
-a {
+a,
+a:link,
+a:visted,
+a:active {
   text-decoration: none;
   color: black;
 }
@@ -68,6 +71,9 @@ ul {
 
 .fiver {
   height: 4rem;
+}
+.social-link-instagram {
+  display: inherit;
 }
 
 a[class="social-white"],
