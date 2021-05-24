@@ -1,18 +1,25 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
-const enforce = require("express-sslify");
 const nodemailer = require("nodemailer");
 
 app.use(express.static("public"));
 app.use(express.json());
-app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
 const serve_html = `${__dirname}/public/`;
 
 app.get("/", (req, res) => {
   res.sendFile(serve_html + "index.html");
 });
+
+app.get("*", function (req, res, next) {
+
+  if ("https" !== req.headers["x-forwarded-proto"] && "production" === process.env.NODE_ENV) {
+      res.redirect("https://" + req.hostname + req.url);
+  } else {
+      next();
+  }
+
 
 app.post("/sendemail", (req, res) => {
   const { name, email, message } = req.body;
