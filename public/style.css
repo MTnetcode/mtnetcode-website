@@ -25,11 +25,6 @@ body {
   align-content: space-between;
 }
 
-.contact {
-  margin: 0;
-  position: relative;
-}
-
 .logo {
   height: 3rem;
 }
@@ -38,10 +33,7 @@ body {
   right: 5rem;
 }
 
-a,
-a:link,
-a:visted,
-a:active {
+a {
   text-decoration: none;
   color: black;
 }
@@ -91,6 +83,7 @@ a:visited[class="social-white"] a:active[class="social-white"] {
   position: fixed;
   left: 1rem;
   top: 50%;
+  z-index: 99;
 }
 .social-white {
   color: white;
@@ -242,6 +235,7 @@ transform: translate(-50%); */
 .contact {
   background-color: #3b3838;
   text-align: center;
+  position: relative;
 }
 
 .h2-white {
