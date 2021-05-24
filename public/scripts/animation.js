@@ -1,6 +1,6 @@
 export default function animation() {
   let contactForm = document.querySelector(".contact-form");
-  let socialLinks = document.querySelectorAll(".li");
+  let socialLinks = document.querySelectorAll(".change-color");
   let fiverrIcon = document.querySelector(".fiver");
   const handleIntersection = (entries) => {
     entries.map((entry) => {
