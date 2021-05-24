@@ -81,7 +81,8 @@ export default async function sendForm() {
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
     let message = document.getElementById("message").value;
-
+    let loader = document.querySelector(".mail-sending");
+    loader.classList.add("show-sending");
     let res = await fetch(`/sendemail`, {
       method: "post",
       headers: {
@@ -95,7 +96,7 @@ export default async function sendForm() {
       }),
     });
     let data = await res.json();
-    console.log(data);
+    loader.classList.remove('show-sending')
 
     return data.msg;
   }
