@@ -1,23 +1,14 @@
 require("dotenv").config();
 const express = require("express");
+const sslRedirect = require("heroku-ssl-redirect");
 const app = express();
 const nodemailer = require("nodemailer");
 
 app.use(express.static("public"));
 app.use(express.json());
+app.use(sslRedirect);
 
 const serve_html = `${__dirname}/public/`;
-
-app.get("*", function (req, res, next) {
-  if (
-    "https" !== req.headers["x-forwarded-proto"] &&
-    "production" === process.env.NODE_ENV
-  ) {
-    res.redirect("https://" + req.hostname + req.url);
-  } else {
-    next();
-  }
-});
 
 app.get("/", (req, res) => {
   res.sendFile(serve_html + "index.html");
