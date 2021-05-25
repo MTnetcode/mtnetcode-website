@@ -493,6 +493,32 @@ footer {
   color: white;
   font-size: 2rem;
 }
+.portfolio-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.portfolio-container {
+  flex-basis: 25%;
+  text-align: center;
+}
+
+.portfolio-header {
+  font-size: 3rem;
+}
+
+.portfolio-img {
+  height: 40rem;
+  margin-top: 2rem;
+}
+
+.portfolio-img:active {
+  background-color: rgba(0, 0, 255, 0.397);
+  z-index: 99;
+}
 
 @media only screen and (max-width: 768px) {
   .main-container {
