@@ -4,7 +4,8 @@ const enforce = require("express-sslify");
 const app = express();
 const nodemailer = require("nodemailer");
 
-app.use(enforce.HTTPS({ trustProtoHeader: true }));
+process.env.NODE_ENV === "production" &&
+  app.use(enforce.HTTPS({ trustProtoHeader: true }));
 app.use(express.static("public"));
 app.use(express.json());
 
