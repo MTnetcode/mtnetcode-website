@@ -502,8 +502,10 @@ footer {
 }
 
 .portfolio-container {
-  flex-basis: 25%;
+  flex-basis: 30%;
   text-align: center;
+  background-color: #fdfaf6;
+  padding: 3rem;
 }
 
 .portfolio-header {
