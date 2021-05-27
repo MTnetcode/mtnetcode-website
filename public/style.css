@@ -535,6 +535,16 @@ footer {
 
 .portfolio-description.show-desc {
   display: block;
+  animation: showText 1s;
+}
+
+@keyframes showText {
+  from {
+    transform: translate(-50%, 80%);
+  }
+  to {
+    transform: translateX(-50%, 0)
+  }
 }
 
 .portfolio-img:hover {
