@@ -337,7 +337,7 @@ footer {
 }
 
 .mobile-links {
-  font-size: 4rem;
+  font-size: 2rem;
   display: block;
   margin: 5rem 0;
 }
@@ -493,6 +493,69 @@ footer {
   color: white;
   font-size: 2rem;
 }
+.portfolio-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.portfolio-container {
+  flex-basis: 30%;
+  text-align: center;
+  background-color: #fdfaf6;
+  padding: 3rem;
+}
+
+.portfolio-header {
+  font-size: 3rem;
+}
+
+.portfolio-img {
+  height: 30rem;
+  position: relative;
+  margin-top: 2rem;
+  background-image: url(./petshelter-header.svg);
+  transition-property: all;
+  background-size: cover;
+  transition-duration: 1s;
+}
+
+.portfolio-description {
+  position: absolute;
+  display: none;
+  color: white;
+  font-size: 2rem;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.portfolio-description.show-desc {
+  display: block;
+  animation: showText 1s;
+}
+
+@keyframes showText {
+  from {
+    transform: translate(-50%, 80%);
+  }
+  to {
+    transform: translateX(-50%, 0)
+  }
+}
+
+.portfolio-img:hover {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(71, 33, 133, 0.329),
+      rgba(35, 107, 83, 0.8)
+    ),
+    url(./petshelter-header.svg);
+  transform: scale(1.1);
+}
 
 @media only screen and (max-width: 768px) {
   .main-container {
@@ -593,5 +656,32 @@ footer {
   }
   .container:hover {
     transform: none;
+  }
+
+  .portfolio-container {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 2rem;
+  }
+  .portfolio-img {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(71, 33, 133, 0.329),
+        rgba(35, 107, 83, 0.8)
+      ),
+      url(./petshelter-header.svg);
+    transition-property: none;
+  }
+
+  .portfolio-img:hover {
+    transform: none;
+  }
+
+  .portfolio-description {
+    display: block;
+  }
+
+  .portfolio-description.show-desc {
+    animation: none;
   }
 }
