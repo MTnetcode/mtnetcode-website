@@ -680,4 +680,8 @@ footer {
   .portfolio-description {
     display: block;
   }
+
+  .portfolio-description.show-desc {
+    animation: none;
+  }
 }
