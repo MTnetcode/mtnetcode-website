@@ -543,7 +543,7 @@ footer {
     transform: translate(-50%, 80%);
   }
   to {
-    transform: translateX(-50%, 0)
+    transform: translateX(-50%, 0);
   }
 }
 
