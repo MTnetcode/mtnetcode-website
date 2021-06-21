@@ -1,3 +1,6 @@
+/**
+ * provides functionality for mobile menu
+ */
 export default function mobileMenu() {
   let openIcon = document.querySelector(".mobile-menu-icon");
   let closeIcon = document.querySelector(".mobile-menu-close");

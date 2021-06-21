@@ -1,3 +1,6 @@
+/**
+ * itersaction observer to change color of incons and mobile menu
+ */
 export default function animation() {
   let contactForm = document.querySelector(".contact-form");
   let socialLinks = document.querySelectorAll(".change-color");

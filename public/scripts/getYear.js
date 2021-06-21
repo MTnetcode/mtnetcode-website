@@ -1,3 +1,6 @@
+/**
+ * show current year at copyright
+ */
 export default function setYear() {
   let showYear = document.getElementById("year");
   let currentYear = new Date().getFullYear();

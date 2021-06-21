@@ -1,3 +1,6 @@
+/**
+ * function which checks for error in forms, when no error found sends form to backend
+ */
 export default async function sendForm() {
   let button = document.querySelector(".btn");
   let errorWindow = document.querySelector(".popup-window-fail");
@@ -96,7 +99,7 @@ export default async function sendForm() {
       }),
     });
     let data = await res.json();
-    loader.classList.remove('show-sending')
+    loader.classList.remove("show-sending");
 
     return data.msg;
   }
