@@ -524,27 +524,20 @@ footer {
 
 .portfolio-description {
   position: absolute;
-  display: none;
+  display: block;
   color: white;
   font-size: 2rem;
   z-index: 99;
   top: 50%;
+  opacity: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -80%);
+  transition: all 1s;
 }
 
 .portfolio-description.show-desc {
-  display: block;
-  animation: showText 1s;
-}
-
-@keyframes showText {
-  from {
-    transform: translate(-50%, 80%);
-  }
-  to {
-    transform: translateX(-50%, 0);
-  }
+  opacity: 1;
+  transform: translate(-50%, -50%);
 }
 
 .portfolio-img:hover {
@@ -678,7 +671,8 @@ footer {
   }
 
   .portfolio-description {
-    display: block;
+    opacity: 1;
+    transform: translate(-50%, -50%);
   }
 
   .portfolio-description.show-desc {
