@@ -14,6 +14,9 @@ const serve_html = `${__dirname}/public/`;
 app.get("/", (req, res) => {
   res.sendFile(serve_html + "index.html");
 });
+app.get("/cz", (req, res) => {
+  res.sendFile(serve_html + "cz.html");
+});
 
 app.post("/sendemail", (req, res) => {
   const { name, email, message } = req.body;
